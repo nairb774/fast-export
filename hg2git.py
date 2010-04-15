@@ -26,7 +26,7 @@ def set_origin_name(name):
   origin_name = name
 
 def setup_repo(url):
-  myui=ui.ui(interactive=False)
+  myui=ui.ui()
   return myui,hg.repository(myui,url)
 
 def fixup_user(user,authors):
